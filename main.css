@@ -1,0 +1,61 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: DodgerBlue;
+}
+
+h1 {
+  font-family: 'Indie Flower',fantasy;
+  font-weight: lighter;
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-bottom: 0px;
+}
+
+.inputSection {
+  margin: 50px 0px 80px 0px;
+  width: 400px;
+}
+
+.inputs {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-top: 10px;
+}
+
+.addOption {
+  margin-top: 10px;
+}
+
+button {
+  background-color: #81CBC8;
+  color: white;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+div.scrollmenu {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+  white-space: nowrap:
+}
+
+div.scrollmenu a{
+  display: inline-block;
+  float: left;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+div.scrollmenu a:hover {
+  background-color: red;
+}
