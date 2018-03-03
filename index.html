@@ -17,14 +17,57 @@
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   </head>
   <body>
-    <h1>Welcome to Chatbook</h1>
-    <p>We are a company that cares for our friends </p>
+    <div class="startSite">
+      <h1>Welcome to Chatbook</h1>
+      <h3>Chatbook is a compnay that wants to introduce people to chatting online. It builds on the priciples of
+        Facebook, which we hope many knows about. Instead of seeing pictures and posts from your friends you can see quotes of the day,
+        hourly updates, thought, feelings from your friends and family. We are Chatbook so Chat for your life! </h3>
+      <button class="registerNow">Register Now!</button>
+    </div>
     <div class="inputSection">
       <div class="inputs">
-        <input placeholder="For example: Split Dance Studio"></input>
+        <input placeholder="First name"></input>
+        <input placeholder="Last name"></input>
+        <input placeholder="E-mail"></input>
+        <input placeholder="Username"></input>
+        <input placeholder="Password"></input>
       </div>
-      <button class="addOption">Add one...</button>
     </div>
-    <button>Register Now!</button>
+    <div class="resultSection">
+      <h2> You are now registered!</h2>
+    </div>
+    <div class="button_submit">
+      <button class="Submit">Submit my information!</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+    $(function() {
+      $('.inputs').hide()
+    })
+
+    $(function() {
+      $('.resultSection').hide()
+    })
+
+    $(function() {
+      $('.button_submit').hide()
+    })
+
+    var registernow_option = function() {
+      $('.inputs').show('<input></input>')
+      $('.button_submit').show()
+      $('.startSite').hide()
+    }
+
+    $('.registerNow').click(registernow_option)
+
+    var submit = function() {
+      $('.inputSection').hide()
+      $('.resultSection').css('display', 'flex')
+    }
+
+    $('.Submit').click(submit)
+    </script>
   </body>
 </html>
